@@ -2,7 +2,7 @@
   "name": "domthen",
   "repo": "nathan7/domthen",
   "description": "promises for silly DOM callback crap",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "keywords": [
     "browser",
     "dom",
