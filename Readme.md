@@ -17,6 +17,7 @@
 ### domthen(obj, event = 'success')
 
   Returns a promise, resolved when `obj['on' + event]` is called, rejected when `obj.onerror` is called.
+  If no event name is given, 'success' will be used and the resolution value of the promise will be `obj`.
 
 ## License
 
