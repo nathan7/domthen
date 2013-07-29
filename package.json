@@ -1,0 +1,25 @@
+{
+  "name": "domthen",
+  "version": "1.0.0",
+  "description": "promises for silly DOM callback crap",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nathan7/domthen.git"
+  },
+  "keywords": [
+    "browser",
+    "dom",
+    "promise",
+    "utility"
+  ],
+  "author": "Nathan Zadoks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nathan7/domthen/issues"
+  },
+  "dependencies": {
+    "promise": ">=3.2.0<4"
+  },
+  "readmeFilename": "Readme.md"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "domthen",
+  "repo": "nathan7/domthen",
+  "description": "promises for silly DOM callback crap",
+  "version": "1.0.0",
+  "keywords": [
+    "browser",
+    "dom",
+    "promise",
+    "utility"
+  ],
+  "dependencies": {
+    "then/promise": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "asi": true,
+  "laxcomma": true,
+  "laxbreak": true,
+  "strict": true,
+  "globalstrict": true,
+  "unused": true,
+  "globals": { "require": true, "module": true }
+}
