@@ -1,7 +1,7 @@
 {
   "name": "domthen",
   "version": "3.0.0",
-  "description": "promises for silly DOM callback crap",
+  "description": "promises for silly DOMRequest crap",
   "main": "index.js",
   "repository": {
     "type": "git",

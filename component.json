@@ -1,7 +1,7 @@
 {
   "name": "domthen",
   "repo": "nathan7/domthen",
-  "description": "promises for silly DOM callback crap",
+  "description": "promises for silly DOMRequest crap",
   "version": "3.0.0",
   "keywords": [
     "browser",

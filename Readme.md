@@ -1,7 +1,7 @@
 
 # domthen
 
-  Promises for silly DOM callback crap.
+  Promises for silly DOMRequest crap.
   Inspired by how fucking awful the DOM callback convention is.
 
 ## Installation
@@ -14,10 +14,9 @@
 
 ## API
 
-### domthen(obj, event = 'success')
+### domthen(obj)
 
-  Returns a promise, resolved when `obj['on' + event]` is called, rejected when `obj.onerror` is called.
-  If no event name is given, 'success' will be used and the resolution value of the promise will be `obj.result`.
+  Returns a promise, resolved with `obj.result` when `obj.onsucces` is called, rejected with `obj.error` when `obj.onerror` is called.
 
 #### domthen.proto(constructor)
 

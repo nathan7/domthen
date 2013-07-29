@@ -1,12 +1,14 @@
 'use strict';
 var Promise = require('promise')
 module.exports = domThen
-function domThen(obj, event) {
+function domThen(obj) {
   return new Promise(function(resolve, reject) {
-    obj['on' + (event || 'success')] = function(value) {
-      resolve(event ? value : obj.result)
+    obj.onsuccess = function() {
+      resolve(obj.result)
     }
-    obj.onerror = reject
+    obj.onerror = function() {
+      reject(obj.error)
+    }
   })
 }
 
