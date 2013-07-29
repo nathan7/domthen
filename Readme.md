@@ -19,6 +19,11 @@
   Returns a promise, resolved when `obj['on' + event]` is called, rejected when `obj.onerror` is called.
   If no event name is given, 'success' will be used and the resolution value of the promise will be `obj`.
 
+#### domthen.proto(constructor)
+
+  Adds .done and .then to the given constructor's prototype.
+  For example, `domthen.proto(DOMRequest)`.
+
 ## License
 
   MIT
