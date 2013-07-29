@@ -4,7 +4,7 @@ module.exports = domThen
 function domThen(obj, event) {
   return new Promise(function(resolve, reject) {
     obj['on' + (event || 'success')] = function(value) {
-      resolve(event ? value : obj)
+      resolve(event ? value : obj.result)
     }
     obj.onerror = reject
   })
