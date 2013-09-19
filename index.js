@@ -3,12 +3,18 @@ var Promise = require('promise')
 module.exports = domThen
 function domThen(obj) {
   return new Promise(function(resolve, reject) {
-    obj.onsuccess = function() {
-      resolve(obj.result)
+    if (obj.readyState === 'done') {
+      if (!obj.error)
+        success()
+      else
+        error()
     }
-    obj.onerror = function() {
-      reject(obj.error)
+    else {
+      obj.onerror = error
+      obj.onsuccess = success
     }
+    function success() { resolve(obj.result) }
+    function error()   { reject (obj.error ) }
   })
 }
 
