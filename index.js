@@ -10,8 +10,8 @@ function domThen(obj) {
         error()
     }
     else {
-      obj.onerror = error
-      obj.onsuccess = success
+      obj.addEventListener('success', success)
+      obj.addEventListener('error'  , error  )
     }
     function success() { resolve(obj.result) }
     function error()   { reject (obj.error ) }
